@@ -1,0 +1,688 @@
+@import url(https://db.onlinewebfonts.com/c/10875ab5a017f30340245f91c470c330?family=MaaxRounded);
+@import url(https://db.onlinewebfonts.com/c/62408d2784b7f3a672400128cb1eb9eb?family=MaaxRounded-Bold);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "MaaxRounded";
+}
+
+body{
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: white;
+}
+
+.card-wrapper{
+    max-width: 1100px;
+    margin: 0px 200px 50px 200px;
+padding: 1%;
+    overflow: hidden;
+}
+
+.listaCartas .itemCarta{
+    list-style: none;
+}
+
+.listaCartas .itemCarta .linkCarta{
+    user-select: none;
+    display: block;
+    background: #ffffff;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.05);
+    transition: 0.2s ease;
+    height: 350px;
+    cursor: default;
+}
+
+.listaCartas .itemCarta .linkCarta:active{
+    cursor: grabbing;
+}
+
+.listaCartas .itemCarta .linkCarta:hover{
+    border-color: #930345;
+}
+
+.listaCartas .itemCarta .consejo:hover{
+    border-color: #f9d332;
+}
+
+.listaCartas .linkCarta .imagenCarta{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+}
+
+.listaCartas .linkCarta .badge {
+    color: #f9d332;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 16px 0 18px;
+    background: #fff8d7;
+    width: fit-content;
+    border-radius: 50px;
+}
+
+.listaCartas .linkCarta .badgeConsejo{
+    color: #ff3b9d;
+    /* padding: 8px 16px; */
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 16px 0 18px;
+    background: #ffd9ec;
+    width: fit-content;
+    border-radius: 50px;
+}
+
+.listaCartas .linkCarta .contenidoCarta{
+    font-size: 1.19rem;
+    color: #930345;
+    font-weight: 600;
+    text-align: center;
+}
+
+.card-wrapper .botones{
+    color: #930345;
+    margin-top: -35px;
+}
+
+@media screen and (max-width: 768px){
+    .card-wrapper{
+        margin: 0 10px 25px;
+    }
+
+    .card-wrapper .botones{
+        display: none;
+    }
+
+    .listaCartas .linkCarta .imagenCarta{
+       height: 150px;
+    }
+}
+.listaCartas .linkCarta .nombre{
+    color: #f9d332;
+    font-family: "MaaxRounded-Bold";
+    text-align: center;
+    font-size: 1.19rem;
+    font-weight: 600;
+}
+
+.listaCartas .linkCarta .nombreConsejo{
+    color: #ff3b9d;
+    font-family: "MaaxRounded-Bold";
+    text-align: center;
+    font-size: 1.19rem;
+    font-weight: 600;
+}
+
+.card-wrapper .swiper-pagination-bullet{
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+    background: #930345;
+}
+
+.card-wrapper .swiper-pagination-bullet-active{
+    opacity: 1;
+}
+@import url(https://db.onlinewebfonts.com/c/10875ab5a017f30340245f91c470c330?family=MaaxRounded);
+@import url(https://db.onlinewebfonts.com/c/62408d2784b7f3a672400128cb1eb9eb?family=MaaxRounded-Bold);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "MaaxRounded";
+}
+
+/* Definir colores principales */
+:root {
+    --primary-color: #F9D332;
+    --secondary-color: #FF3B9D;
+    --accent-color: #930345;
+    --btn-hover: #e9b931; /* Un tono más suave para el hover */
+    --text-color: #ffffff;
+}
+
+/* Contenedor de donaciones */
+.donation-container {
+    margin: 30px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    background: var(--accent-color);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    text-align: center;
+}
+
+/* Título */
+.donation-container h2 {
+    color: var(--primary-color);
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Descripción */
+.donation-container p {
+    color: var(--text-color);
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Botones de tipo de donación */
+.btn-type {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    border: none;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-type:hover {
+    background-color: var(--btn-hover);
+    color: var(--text-color);
+}
+
+/* Botones de monto */
+.amount {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 12px 18px;
+    margin: 5px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.amount.highlight {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+}
+
+.amount:hover {
+    filter: brightness(90%);
+}
+
+/* Campo de monto personalizado */
+#custom-amount {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Botón de donar */
+#donate-btn {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    border: none;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#donate-btn:hover {
+    background-color: var(--btn-hover);
+    color: var(--text-color);
+}
+
+/* Popups */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Asegura que el popup esté por encima de todo */
+}
+
+.popup-content {
+    background: var(--text-color);
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.popup-content h3 {
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+.popup input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+}
+
+.popup button {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    border: none;
+    padding: 12px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.popup button:hover {
+    background-color: var(--btn-hover);
+    color: var(--text-color);
+}
+
+/* Estilos para el mensaje de agradecimiento */
+#thank-you-popup h3 {
+    color: var(--primary-color);
+}
+
+#thank-you-popup p {
+    color: var(--accent-color);
+    font-size: 18px;
+}
+
+/* BANNER */
+
+/* Estilos para el contenedor del video */
+        /* Estilos para el contenedor del video */
+        .video-banner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 70vh; /* Reducimos la altura para ocupar menos espacio */
+            overflow: hidden;
+            background: white; /* Fondo en caso de que el video no cubra toda la pantalla */
+            margin-bottom: 30px;
+        }
+
+        /* Estilos para el video */
+        .video-banner video {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+        }
+
+        /* Estilos para el contenido sobre el video */
+
+
+/* CUADRADOS */
+
+.contador-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.contador-item {
+    height: 160px;
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    padding: 20px 0px 15px 0px;
+    font-weight: bold;
+    box-shadow: 8px 8px 16px rgba(165, 177, 198, 0.8),
+                -8px -8px 16px rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.icono {
+    font-size: 2.8em;
+    padding-bottom: 10px;
+}
+
+
+.fa-users {
+    color: #ffffff;
+}
+
+
+.fa-heart {
+    color: #ffffff;
+}
+
+
+.fa-hands-helping {
+    color: #ffffff;
+}
+
+
+.fa-user-friends {
+    color: #ffffff;
+}
+
+
+.contador-titulo {
+    padding-bottom: 10px;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #930345;
+}
+
+
+.contador-numero {
+    font-size: 2.2em;
+    color: #930345
+}
+
+
+@media screen and (max-width: 700px) {
+    .contador-item {
+        width: 250px;
+        background-color: #fbd630;
+       
+    }
+}
+.contador-item {
+    background-color: #F9D332 !important;
+}
+
+
+
+/* CARD PROGRAMAS */
+.wrapper{
+    padding: 10px ;
+}
+#card-area{
+    font-family: "MaaxRounded";
+    padding: 50px 0;
+}
+.box-area{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 0%;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: "MaaxRounded";
+}
+.box {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px #b6b5b1;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    font-family: "MaaxRounded";
+}
+.box img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.overlay {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(transparent,#930345 58%);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.overlay h3 {
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-top: 80%;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.overlay a {
+    margin-top: 10px;
+    color: #262626;
+    text-decoration: none;
+    font-size: 14px;
+    background: #F9D332;
+    border-radius: 50px;
+    text-align: center;
+    padding: 5px 15px;
+}
+.box:hover img{
+    transform: scale(1.1);
+}
+.box:hover .overlay{
+    height: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'MaaxRounded', sans-serif;
+    box-sizing: border-box;
+}
+
+h3 {
+    font-family: 'MaaxRounded', sans-serif;
+}
+
+.barra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    margin-bottom: 30px;
+}
+
+#quienes img {
+   
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-right: 50%;
+    /* margin-left: 20%; */
+    margin-bottom: 20px;
+    margin-bottom: 0px;
+ }
+
+
+ /* NUMERO */
+:root {
+  /*===== Colores =====*/
+  --first-color: #930345;
+  --white-color: #930345;
+  --dark-color: #F9D332;
+  --dark-color-lighten: #F2F5FF;
+  /*===== Fuente y tipografia =====*/
+  --body-font: 'Poppins', sans-serif;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+  --small-font-size: .875rem;
+}
+
+
+/*===== BASE =====*/
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/*===== CARD =====*/
+.container {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+margin-top: 0%;
+
+}
+
+
+.card {
+  width: 320px;
+  height: 400px;
+  border-radius: 1rem;
+  padding: 4rem 2rem 0;
+
+  overflow-y: hidden;
+}
+
+
+.card__img {
+  position: absolute;
+  width: 65%;
+  max-width: 160px;
+
+}
+
+
+.card__data {
+  transform: translateY(13.2rem);
+  text-align: center;
+}
+
+
+.card__title {
+  font-size: var(--h1-font-size);
+  color: var(--first-color);
+  margin-bottom: .5rem;
+}
+
+
+.card__preci {
+  display: inline-block;
+  font-size: var(--h2-font-size);
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+}
+
+
+.card__description {
+  font-size: var(--small-font-size);
+  text-align: initial;
+  margin-bottom: 1.25rem;
+  opacity: 0;
+}
+
+
+.card__button {
+  display: block;
+  width: max-content;
+  padding: 1.125rem 2rem;
+
+  border-radius: .5rem;
+  font-weight: 600;
+  transition: .2s;
+  opacity: 0;
+}
+
+
+
+
+.card__img,
+.card__data,
+.card__title,
+.card__preci,
+.card__description {
+  transition: .5s;
+}
+
+
+/* Hover card effect */
+.card:hover .card__img {
+  transform: translate(-1.5rem, -9.5rem) rotate(-20deg);
+}
+
+
+.card:hover .card__data {
+  transform: translateY(4.8rem);
+}
+
+
+.card:hover .card__title {
+  transform: translateX(-2.3rem);
+  margin-bottom: 0;
+}
+
+
+.card:hover .card__preci {
+  transform: translateX(-6.8rem);
+}
+
+
+.card:hover .card__description,
+.card:hover .card__button {
+  transition-delay: .2s;
+  opacity: 1;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/Squad10_Hackaton/Recursos/FONDO\ DONACION.gif");
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    /* background-attachment: fixed; Mantiene la imagen fija al hacer scroll */
+}
+
+main img {
+
+        border-radius: 30px; /* Esquinas ligeramente redondeadas */
+
+}
