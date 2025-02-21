@@ -515,7 +515,6 @@ h3 {
     justify-content: center;
     align-items: center;
     width: 100%;
-
     margin-bottom: 30px;
 }
 
@@ -569,17 +568,13 @@ img {
   justify-content: center;
   align-items: center;
 margin-top: 0%;
-
 }
-
-
 .card {
-  width: 320px;
-  height: 400px;
-  border-radius: 1rem;
-  padding: 4rem 2rem 0;
 
-  overflow-y: hidden;
+    margin-bottom: 15%;
+    margin-top: 8%;
+    background-color: #f5f5f5;
+    border: transparent;
 }
 
 
@@ -587,7 +582,7 @@ margin-top: 0%;
   position: absolute;
   width: 65%;
   max-width: 160px;
-
+background-color: transparent;
 }
 
 
@@ -671,14 +666,19 @@ margin-top: 0%;
   opacity: 1;
 }
 
+
+
+
 main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("/Squad10_Hackaton/Recursos/FONDO\ DONACION.gif");
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    /* background-attachment: fixed; Mantiene la imagen fija al hacer scroll */
+    /* background-image: url("/Squad10_Hackaton/Recursos/FONDO\ DONACION.png");
+    background-position: center; 
+    background-repeat: no-repeat;  
+    background-size: 80%; */
+
+    /* background-attachment: fixed; Mantiene la imagen fija al hacer scroll } */
 }
 
 main img {
@@ -686,3 +686,289 @@ main img {
         border-radius: 30px; /* Esquinas ligeramente redondeadas */
 
 }
+
+
+/* FORMULARIO */
+
+
+
+/* Contenedor del formulario  */
+/* .card {
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    width: 100%;
+} */
+
+.formulario{
+    width: 30%;
+    margin: 30px;
+
+}
+
+/* Título del formulario */
+h2 {
+    color: #930345;
+    font-weight: bold;
+}
+
+
+/* Botón principal del formulario */
+.btn-primary {
+    background-color: #930345;
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+.btn-primary:hover {
+    background-color: #7a0235;
+}
+
+
+/* Estilos para el select y el input */
+.form-control, .form-select {
+    border-radius: 10px;
+    border: 1px solid #930345;
+}
+
+
+/* 🎨 Botón de Administrador */
+.admin-btn {
+    background-color: #930345;
+    color: #930345;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 10px 15px;
+    display: block;
+    margin: 20px auto;
+    width: auto;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.admin-btn:hover {
+    background-color: #F9D332;
+    color: white;
+}
+
+
+/* Modal de inicio de sesión */
+.modal-content {
+    border-radius: 15px;
+}
+
+
+.modal-header {
+    background-color: #930345;
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
+.modal-title {
+    font-weight: bold;
+}
+
+
+/* Estilos generales del popup agradecimiento */
+
+
+/* Mostrar el popup con animación */
+.popup.show {
+    display: block;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+/* Título del popup */
+.popup-content h3 {
+    color: #930345;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+/* Botón del popup */
+/* Botón del popup (incluyendo el de cerrar) */
+.popup button, .popup .close-btn {
+    background:#f9d33a;
+    color: #930345;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.2s ease, background 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 15px;
+}
+
+
+/* Efecto hover */
+.popup button:hover, .popup .close-btn:hover {
+    transform: scale(1.05);
+    background: #f9d33a;
+    box-shadow: 0 0 20px rgba(249, 211, 50, 0.8); /* Efecto glow */
+}
+
+
+/* Efecto active (cuando se presiona) */
+.popup button:active, .popup .close-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 20px rgba(249, 211, 50, 1);
+}
+
+
+
+
+/* **********************
+Acepto terminos y condiciones */
+
+
+.terms-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #930345;
+}
+.terms-container input {
+    margin-right: 8px; /* Espacio entre el checkbox y el texto */
+}
+
+#administrador-btn {
+    justify-content: left;
+    align-items: left;
+    justify-items: left;
+    float: left;
+    margin-left: 55px;
+    margin-bottom: 100px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color: #F9D332;
+    padding: 70px 0;
+    margin-top: 10px;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #940346;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 300;
+    color: white;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #000000;
+    padding-left: 8px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #940346;
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
+
+
+
+
+
+/* ******************************** */
+.etica{
+    color: #ffffff;
+}
+
+
+
+
+.footer {
+    background-color: #F9D332;
+    padding: 90px 0; /* Aumenta el padding general */
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Espaciado uniforme entre columnas */
+    gap: 50px; /* Más separación entre columnas */
+}
+
+
+.footer-col {
+    width: 30%; /* Ajusta el ancho de las columnas */
+    padding: 0 30px; /* Más separación entre columnas */
+}
+
+
+
+
+

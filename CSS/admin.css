@@ -1,0 +1,121 @@
+@import url(https://db.onlinewebfonts.com/c/10875ab5a017f30340245f91c470c330?family=MaaxRounded);
+@import url(https://db.onlinewebfonts.com/c/62408d2784b7f3a672400128cb1eb9eb?family=MaaxRounded-Bold);
+/* Estilos generales */
+body {
+    font-family: 'MaaxRounded', sans-serif;
+    background-color: #f8f9fa;
+}
+
+
+/* Navbar */
+.navbar {
+    background-color: #930345 !important;
+    padding: 15px;
+}
+.navbar-brand, .nav-link {
+    color: #f9d33a;
+    font-weight: bold;
+}
+.nav-link:hover {
+    color: #fff !important;
+}
+
+
+/* Sidebar */
+.sidebar {
+    background-color: #930345;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+    border-radius: 20px;
+}
+.sidebar a {
+    color: #f9d33a;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.sidebar a:hover {
+    background-color: #f9d33a;
+    color: #930345;
+}
+
+
+/* Botón de administrador */
+.admin-btn {
+    background-color: #930345;
+    color: #f9d33a;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.admin-btn:hover {
+    background-color: #f9d33a;
+    color: #930345;
+}
+
+
+/* Tarjetas de datos */
+.card {
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+.card-title {
+    color: #930345;
+}
+
+
+/* Tabla de donaciones */
+.table {
+    border-radius: 10px;
+    overflow: hidden;
+}
+.table thead {
+    background-color: #930345;
+    color: white;
+}
+.table tbody tr:hover {
+    background-color: #f9d33a;
+    color: #930345;
+    transition: 0.3s;
+}
+
+
+/* **************************** */
+/* Sidebar responsive */
+@media (max-width: 992px) {
+    #sidebar {
+        position: fixed;
+        top: 0;
+        left: -250px;
+        width: 250px;
+        height: 100vh;
+        background-color: #222;
+        transition: left 0.3s ease;
+        z-index: 1050;
+    }
+
+
+    #sidebar.show {
+        left: 0;
+    }
+}
+
+
+/* Estilo de los íconos del sidebar */
+.nav-link i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+
+/* Estilo de la tabla */
+.table-responsive {
+    overflow-x: auto;
+}
+
+
