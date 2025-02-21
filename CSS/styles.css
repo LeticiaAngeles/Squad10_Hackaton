@@ -248,69 +248,7 @@ padding: 1%;
     color: var(--text-color);
 }
 
-/* Popups */
-.popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    justify-content: center;
-    align-items: center;
-    z-index: 9999; /* Asegura que el popup esté por encima de todo */
-}
 
-.popup-content {
-    background: var(--text-color);
-    padding: 20px;
-    width: 90%;
-    max-width: 400px;
-    text-align: center;
-    border-radius: 25px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.popup-content h3 {
-    color: var(--accent-color);
-    margin-bottom: 20px;
-}
-
-.popup input {
-    width: 90%;
-    padding: 12px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 25px;
-}
-
-.popup button {
-    background-color: var(--primary-color);
-    color: var(--accent-color);
-    border: none;
-    padding: 12px;
-    margin-top: 10px;
-    cursor: pointer;
-    border-radius: 25px;
-    font-weight: bold;
-    transition: all 0.3s ease;
-}
-
-.popup button:hover {
-    background-color: var(--btn-hover);
-    color: var(--text-color);
-}
-
-/* Estilos para el mensaje de agradecimiento */
-#thank-you-popup h3 {
-    color: var(--primary-color);
-}
-
-#thank-you-popup p {
-    color: var(--accent-color);
-    font-size: 18px;
-}
 
 /* BANNER */
 
@@ -774,9 +712,23 @@ h2 {
     font-weight: bold;
 }
 
-
 /* Estilos generales del popup agradecimiento */
-
+.popup {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    background: rgba(255, 255, 255, 0.95); /* Más sólido */
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 25px;
+    width: 320px;
+    text-align: center;
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
 
 /* Mostrar el popup con animación */
 .popup.show {
@@ -785,7 +737,6 @@ h2 {
     transform: translate(-50%, -50%) scale(1);
 }
 
-
 /* Título del popup */
 .popup-content h3 {
     color: #930345;
@@ -793,7 +744,6 @@ h2 {
     font-weight: bold;
     margin-bottom: 10px;
 }
-
 
 /* Botón del popup */
 /* Botón del popup (incluyendo el de cerrar) */
@@ -810,7 +760,6 @@ h2 {
     margin-top: 15px;
 }
 
-
 /* Efecto hover */
 .popup button:hover, .popup .close-btn:hover {
     transform: scale(1.05);
@@ -818,14 +767,11 @@ h2 {
     box-shadow: 0 0 20px rgba(249, 211, 50, 0.8); /* Efecto glow */
 }
 
-
 /* Efecto active (cuando se presiona) */
 .popup button:active, .popup .close-btn:active {
     transform: scale(0.95);
     box-shadow: 0 0 20px rgba(249, 211, 50, 1);
 }
-
-
 
 
 /* **********************
